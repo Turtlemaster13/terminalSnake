@@ -47,7 +47,7 @@ func main() {
 	drawMap(gameMap)
 	showScore(score, mapSize)
 
-	snake := snake{1, 1, []location{}, location{int(mapSize/2 - 1), int(mapSize/2 - 1)}}
+	snake := snake{1, 0, []location{}, location{int(mapSize/2 - 1), int(mapSize/2 - 1)}}
 	drawSnake(snake)
 	apple := placeApple(mapSize)
 	termbox.Flush()

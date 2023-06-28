@@ -8,11 +8,8 @@ url='https://github.com/Turtlemaster13/terminalSnake'
 license=('CC-BY')
 depends=('go')
 
-#sha256sum=("2a6134805ff111ac383df132cf292d6cbdd70aca841faeaf4ffc9fd57d53aa1a")
-#source=("archive.tar.gz")
 
 build() {
-  tar -xf "$srcdir/archive.tar.gz"
   cd "$srcdir/$pkgname-$pkgver"
   go build -o "snakeGame"
 }
